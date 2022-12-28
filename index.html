@@ -9,7 +9,7 @@
         <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
             <a-camera active="false" position="0 0 0"></a-camera>
             <!-- mesh for all -->
-            <!-- <a-entity mindar-face-target="anchorIndex: 400">
+            <a-entity mindar-face-target="anchorIndex: 400">
                 <a-cylinder color="green" radius="0.1"></a-cylinder>
             </a-entity>
             <a-entity mindar-face-target="anchorIndex: 200">
@@ -17,7 +17,7 @@
             </a-entity>
             <a-entity mindar-face-target="anchorIndex: 200">
                 <a-sphere color="red" radius="0.3"></a-cylinder>
-            </a-entity> -->
+            </a-entity>
 
             <!-- 2 big cylinders with balls -->
             <!-- <a-entity mindar-face-target="anchorIndex: 1">
@@ -30,10 +30,10 @@
                 <a-sphere position="2 1 -3" color="green" radius="0.3"></a-cylinder>
             </a-entity> -->
 
-            <a-assets>
-                <a-asset-item id="tree" src="./Black Cat mask.glb"></a-asset-item>
+            <!-- <a-assets>
+                <a-asset-item id="tree" src="https://raw.githubusercontent.com/SinghDivyajeet/mindAR/main/geisa%20mask.gltf?token=GHSAT0AAAAAAB4KP3PEZCD6ZRHIXWKDXU3GY5MELRA"></a-asset-item>
             </a-assets>
-            <a-entity gltf-model="#tree" modify-materials scale="0.01 0.01 0.01"></a-entity>
+            <a-entity gltf-model="#tree" mindar-face-target="anchorIndex: 1" modify-materials scale="0.01 0.01 0.01"></a-entity> -->
         </a-scene>
       
         
