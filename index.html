@@ -79,8 +79,11 @@
             <a-asset-item id="hatModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/face-tracking/assets/hat/scene.gltf"></a-asset-item>
             <a-asset-item id="hatModel2" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/face-tracking/assets/hat2/scene.gltf"></a-asset-item>
             <a-asset-item id="earringModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/face-tracking/assets/earring/scene.gltf"></a-asset-item>
-            <a-asset-item id="maskModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+            <!-- <a-asset-item timeout="10000" id="maskModel" src="https://cdn.jsdelivr.net/gh/SinghDivyajeet/mindAR@main/geisa%20mask.gltf"></a-asset-item> -->
+            <!-- <a-asset-item timeout="10000" id="maskModel" src="https://d181unztmldq2z.cloudfront.net/mediaDev/b4b0984f40c990d17cd73277302d511d64b9aa741f88b4b3b140161857c98dc8"></a-asset-item> -->
             <!-- <a-asset-item id="maskModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item> -->
+            <a-asset-item id="glass" src="./Human Mask_JIO.gltf"></a-asset-item>
+            <!-- <a-asset-item id="maskModel" src="./Human Mask_JIO.gltf"></a-asset-item> -->
           </a-assets>
           <!-- <a-camera active="false" position="0 0 0"></a-camera> -->
 
@@ -103,9 +106,12 @@
           <a-entity mindar-face-target="anchorIndex: 127">
         <a-gltf-model rotation="-0.1 -0 0" position="0 -0.3 -0.3" scale="0.05 0.05 0.05" src="#earringModel" class="earring-entity" visible="false"></a-gltf-model>
           </a-entity>
-          <a-entity mindar-face-target="anchorIndex: 127">
-            <a-gltf-model rotation="-0.1 -0 0" position="-1 -0.3 -0.3" scale="0.005 0.005 0.005" src="#maskModel" class="mask-entity" visible="false"></a-gltf-model>
+          <a-entity mindar-face-target="anchorIndex: 168">
+            <a-gltf-model rotation="0 0 0" position="0 -0.9 0" scale="8 8 8" src="#glass" class="mask-entity" visible="false"></a-gltf-model>
         </a-entity>
+        <!-- <a-entity mindar-face-target="anchorIndex: 127">
+          <a-gltf-model rotation="-0.1 0 0" position="-1 -0.3 -0.3" scale="0.5 0.5 0.5" src="#maskModel" class="mask-entity" visible="false"></a-gltf-model>
+      </a-entity> -->
         </a-scene>
       </div>
     </body>
